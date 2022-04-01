@@ -14,8 +14,7 @@ jobs:
     steps:
       - name: Build and upload snap
         id: build
-      # uses: canonical/edgex-snap-testing/build@v2
-        uses: MonicaisHer/edgex-snap-testing/build@EDGEX-402-create-app-service-configurable-testing-suite
+        uses: canonical/edgex-snap-testing/build@v2
     outputs:
       snap: ${{steps.build.outputs.snap}}
 
